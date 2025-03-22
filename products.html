@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nos Produits - Nystock</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-white">
+  <!-- Top Banner -->
+  <div class="bg-gradient-to-r from-indigo-900 to-blue-900 text-white py-2 px-4 text-center text-sm">
+    <p>🎉 Special offer: Get 3 months free on annual subscriptions! <a href="#pricing" class="underline hover:text-blue-200 transition-colors">Learn more</a></p>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <i data-lucide="box" class="h-8 w-8 text-blue-900"></i>
+        <span class="text-xl font-bold text-gray-900">Nystock</span>
+      </div>
+      <div class="hidden lg:flex space-x-8">
+        <a href="index.html" class="text-gray-600 hover:text-gray-900">Home</a>
+        <a href="#features" class="text-gray-600 hover:text-gray-900">Features</a>
+        <a href="/product.html" class="text-gray-600 hover:text-gray-900">Publicite</a>
+        <a href="#pricing" class="text-gray-600 hover:text-gray-900">Pricing</a>
+        <a href="#customers" class="text-gray-600 hover:text-gray-900">Customers</a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="#login" class="text-gray-600 hover:text-gray-900">Login</a>
+        <button class="bg-blue-900 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-all hover:shadow-lg transform hover:-translate-y-0.5">
+          Start Free Trial
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="py-12">
+    <!-- Filtres et Recherche -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="w-full md:w-96">
+          <div class="relative">
+            <input type="text" 
+                   placeholder="Rechercher un produit..." 
+                   class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-900 focus:border-transparent">
+            <i data-lucide="search" class="h-5 w-5 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2"></i>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <select class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-900 focus:border-transparent">
+            <option value="">Catégorie</option>
+            <option value="software">Logiciels</option>
+            <option value="hardware">Matériel</option>
+            <option value="services">Services</option>
+          </select>
+          <select class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-900 focus:border-transparent">
+            <option value="">Trier par</option>
+            <option value="price-asc">Prix croissant</option>
+            <option value="price-desc">Prix décroissant</option>
+            <option value="name">Nom</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Liste des Produits -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Produit 1 -->
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+          <a href="product.html" class="block">
+            <div class="aspect-w-16 aspect-h-9 relative">
+              <img src="https://images.unsplash.com/photo-1581091226825-c6a89e7e4801?w=800&fit=crop" 
+                   alt="Enterprise System"
+                   class="w-full h-48 object-cover">
+              <div class="absolute top-4 right-4 bg-blue-900 text-white px-3 py-1 rounded-full text-sm">
+                Premium
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Enterprise Inventory System</h3>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Solution complète de gestion d'inventaire pour les grandes entreprises
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-2xl font-bold text-gray-900">$299/mois</span>
+                <button class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all">
+                  Voir détails
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Produit 2 -->
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+          <a href="product.html" class="block">
+            <div class="aspect-w-16 aspect-h-9 relative">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&fit=crop" 
+                   alt="Business Analytics"
+                   class="w-full h-48 object-cover">
+              <div class="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm">
+                Standard
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Business Analytics Suite</h3>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Outils d'analyse avancés pour optimiser vos opérations
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-2xl font-bold text-gray-900">$199/mois</span>
+                <button class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all">
+                  Voir détails
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Produit 3 -->
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+          <a href="product.html" class="block">
+            <div class="aspect-w-16 aspect-h-9 relative">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&fit=crop" 
+                   alt="Cloud Storage"
+                   class="w-full h-48 object-cover">
+              <div class="absolute top-4 right-4 bg-purple-600 text-white px-3 py-1 rounded-full text-sm">
+                Pro
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Cloud Storage Solution</h3>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Stockage sécurisé et évolutif pour vos données
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-2xl font-bold text-gray-900">$149/mois</span>
+                <button class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all">
+                  Voir détails
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Produit 4 -->
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+          <a href="product.html" class="block">
+            <div class="aspect-w-16 aspect-h-9 relative">
+              <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&fit=crop" 
+                   alt="Mobile App"
+                   class="w-full h-48 object-cover">
+              <div class="absolute top-4 right-4 bg-orange-600 text-white px-3 py-1 rounded-full text-sm">
+                Mobile
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Mobile Inventory App</h3>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Gérez votre inventaire depuis votre smartphone
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-2xl font-bold text-gray-900">$79/mois</span>
+                <button class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all">
+                  Voir détails
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Produit 5 -->
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+          <a href="product.html" class="block">
+            <div class="aspect-w-16 aspect-h-9 relative">
+              <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&fit=crop" 
+                   alt="API Integration"
+                   class="w-full h-48 object-cover">
+              <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
+                Developer
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">API Integration Pack</h3>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Intégrez nos services à vos applications existantes
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-2xl font-bold text-gray-900">$399/mois</span>
+                <button class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all">
+                  Voir détails
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Produit 6 -->
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+          <a href="product.html" class="block">
+            <div class="aspect-w-16 aspect-h-9 relative">
+              <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?w=800&fit=crop" 
+                   alt="Support Premium"
+                   class="w-full h-48 object-cover">
+              <div class="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm">
+                Support
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Support Premium 24/7</h3>
+              <p class="text-gray-600 mb-4 line-clamp-2">
+                Assistance technique dédiée et support prioritaire
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-2xl font-bold text-gray-900">$249/mois</span>
+                <button class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all">
+                  Voir détails
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="mt-12 flex justify-center">
+        <nav class="flex items-center space-x-2">
+          <button class="p-2 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-50">
+            <i data-lucide="chevron-left" class="h-5 w-5"></i>
+          </button>
+          <button class="px-4 py-2 rounded-lg bg-blue-900 text-white">1</button>
+          <button class="px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-600">2</button>
+          <button class="px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-600">3</button>
+          <button class="p-2 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-50">
+            <i data-lucide="chevron-right" class="h-5 w-5"></i>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-12 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Product</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Security</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Company</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition-colors">About</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Customers</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Resources</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition-colors">Documentation</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Guides</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Legal</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition-colors">Privacy</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Terms</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+          <i data-lucide="box" class="h-8 w-8 text-white"></i>
+          <span class="text-xl font-bold text-white">Nystock</span>
+        </div>
+        <p class="text-sm">&copy; 2025 Nystock. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
