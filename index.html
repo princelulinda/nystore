@@ -22,40 +22,54 @@
         <i data-lucide="box" class="h-8 w-8 text-blue-900"></i>
         <span class="text-xl font-bold text-gray-900">Nystore</span>
       </div>
+
+      <!-- Menu Mobile -->
+      <button id="mobile-menu-button" class="lg:hidden text-gray-600 hover:text-gray-900">
+        <i data-lucide="menu" class="h-6 w-6"></i>
+      </button>
+
+      <!-- Menu Desktop -->
       <div class="hidden lg:flex space-x-8">
         <div class="relative group">
           <a href="#features" class="text-gray-600 hover:text-gray-900 flex items-center">
             Features
-            <i data-lucide="chevron-down" class="h-4 w-4 ml-1 transition-transform group-hover:rotate-180"></i>
+            <i data-lucide="chevron-down" class="h-4 w-4 ml-1"></i>
           </a>
-          <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2">
-            <a href="#inventory" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-t-lg">Inventory Management</a>
+          <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="#inventory" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900">Inventory Management</a>
             <a href="#orders" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900">Order Management</a>
-            <a href="#reports" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-b-lg">Reports & Analytics</a>
+            <a href="#reports" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900">Reports & Analytics</a>
           </div>
         </div>
         <a href="/products.html" class="text-gray-600 hover:text-gray-900">Publicite</a>
-        <a href="#pricing" class="text-gray-600 hover:text-gray-900 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-blue-900 after:transition-all">Pricing</a>
-        <div class="relative group">
-          <a href="#solutions" class="text-gray-600 hover:text-gray-900 flex items-center">
-            Solutions
-            <i data-lucide="chevron-down" class="h-4 w-4 ml-1 transition-transform group-hover:rotate-180"></i>
-          </a>
-          <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2">
-            <a href="#retail" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-t-lg">Retail</a>
-            <a href="#wholesale" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900">Wholesale</a>
-            <a href="#manufacturing" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-900 rounded-b-lg">Manufacturing</a>
-          </div>
-        </div>
-        <a href="#customers" class="text-gray-600 hover:text-gray-900 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-blue-900 after:transition-all">Customers</a>
+        <a href="#pricing" class="text-gray-600 hover:text-gray-900">Pricing</a>
+        <a href="#customers" class="text-gray-600 hover:text-gray-900">Customers</a>
       </div>
-      <div class="flex items-center space-x-4">
-        <a href="#login" class="text-gray-600 hover:text-gray-900 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-blue-900 after:transition-all">Login</a>
+
+      <!-- Boutons de droite -->
+      <div class="hidden lg:flex items-center space-x-4">
+        <a href="#login" class="text-gray-600 hover:text-gray-900">Login</a>
         <button class="bg-blue-900 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-all hover:shadow-lg transform hover:-translate-y-0.5">
           Start Free Trial
         </button>
       </div>
     </nav>
+
+    <!-- Menu Mobile Panel -->
+    <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-gray-200">
+      <div class="px-4 py-2">
+        <a href="#features" class="block py-2 text-gray-600 hover:text-gray-900">Home</a>
+        <a href="#features" class="block py-2 text-gray-600 hover:text-gray-900">Features</a>
+        <a href="/products.html" class="block py-2 text-gray-600 hover:text-gray-900">Publicite</a>
+        <a href="#pricing" class="block py-2 text-gray-600 hover:text-gray-900">Pricing</a>
+        <a href="#customers" class="block py-2 text-gray-600 hover:text-gray-900">Customers</a>
+        <div class="border-t border-gray-200 my-2"></div>
+        <a href="#login" class="block py-2 text-gray-600 hover:text-gray-900">Login</a>
+        <button class="w-full mt-2 bg-blue-900 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-all">
+          Start Free Trial
+        </button>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -175,7 +189,9 @@
                 <i data-lucide="clipboard-list" class="h-8 w-8 text-blue-900"></i>
               </div>
               <h3 class="text-xl font-semibold mb-4">1. Setup Your Inventory</h3>
-              <p class="text-gray-600">Import your existing inventory or start fresh. Our intuitive interface makes it easy to get started.</p>
+              <p class="text-gray-600 mb-6">
+                Import your existing inventory or start fresh. Our intuitive interface makes it easy to get started.
+              </p>
             </div>
             <div class="absolute top-0 right-0 -mr-4 mt-8 hidden md:block">
               <i data-lucide="arrow-right" class="h-8 w-8 text-blue-900"></i>
@@ -187,7 +203,9 @@
                 <i data-lucide="settings" class="h-8 w-8 text-green-600"></i>
               </div>
               <h3 class="text-xl font-semibold mb-4">2. Customize Settings</h3>
-              <p class="text-gray-600">Configure alerts, set reorder points, and customize reports to match your needs.</p>
+              <p class="text-gray-600 mb-6">
+                Configure alerts, set reorder points, and customize reports to match your needs.
+              </p>
             </div>
             <div class="absolute top-0 right-0 -mr-4 mt-8 hidden md:block">
               <i data-lucide="arrow-right" class="h-8 w-8 text-blue-900"></i>
@@ -199,7 +217,9 @@
                 <i data-lucide="rocket" class="h-8 w-8 text-purple-600"></i>
               </div>
               <h3 class="text-xl font-semibold mb-4">3. Start Managing</h3>
-              <p class="text-gray-600">Begin tracking inventory, processing orders, and generating insights immediately.</p>
+              <p class="text-gray-600 mb-6">
+                Begin tracking inventory, processing orders, and generating insights immediately.
+              </p>
             </div>
           </div>
         </div>
@@ -224,7 +244,9 @@
               <i data-lucide="box" class="h-6 w-6 text-blue-900"></i>
             </div>
             <h3 class="text-xl font-semibold text-gray-900 mb-4">Inventory Tracking</h3>
-            <p class="text-gray-600 mb-6">Track stock levels, set reorder points, and manage multiple warehouses with ease.</p>
+            <p class="text-gray-600 mb-6">
+              Track stock levels, set reorder points, and manage multiple warehouses with ease.
+            </p>
             <ul class="space-y-3">
               <li class="flex items-center text-gray-600">
                 <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2"></i>
@@ -252,7 +274,9 @@
               <i data-lucide="shopping-cart" class="h-6 w-6 text-purple-600"></i>
             </div>
             <h3 class="text-xl font-semibold text-gray-900 mb-4">Order Management</h3>
-            <p class="text-gray-600 mb-6">Handle purchase orders, sales orders, and dropshipping all in one place.</p>
+            <p class="text-gray-600 mb-6">
+              Handle purchase orders, sales orders, and dropshipping all in one place.
+            </p>
             <ul class="space-y-3">
               <li class="flex items-center text-gray-600">
                 <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2"></i>
@@ -280,7 +304,9 @@
               <i data-lucide="bar-chart-2" class="h-6 w-6 text-green-600"></i>
             </div>
             <h3 class="text-xl font-semibold text-gray-900 mb-4">Reports & Analytics</h3>
-            <p class="text-gray-600 mb-6">Get insights with powerful reporting and analytics tools.</p>
+            <p class="text-gray-600 mb-6">
+              Get insights with powerful reporting and analytics tools.
+            </p>
             <ul class="space-y-3">
               <li class="flex items-center text-gray-600">
                 <i data-lucide="check-circle" class="h-5 w-5 text-green-500 mr-2"></i>
@@ -741,7 +767,24 @@
   </footer>
 
   <script>
+    // Initialize Lucide icons
     lucide.createIcons();
+
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        mobileMenuButton.innerHTML = '<i data-lucide="x" class="h-6 w-6"></i>';
+      } else {
+        mobileMenu.classList.add('hidden');
+        mobileMenuButton.innerHTML = '<i data-lucide="menu" class="h-6 w-6"></i>';
+      }
+      lucide.createIcons();
+    });
   </script>
 </body>
 </html>
